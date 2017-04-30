@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class quitarVida : MonoBehaviour {
+public class danoController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,13 +13,4 @@ public class quitarVida : MonoBehaviour {
 	void Update () {
 		
 	}
-
-	void OnTriggerEnter(Collider other) 
-     {
-         if (other.tag == "Player")
-         {
-			//barraVida.bajarVida(5);
-         }
-     }
-
 }
