@@ -24,7 +24,7 @@ public class pickUp : MonoBehaviour {
      {
          if (other.tag == "pickup")
          {
-             Destroy(other.gameObject);
+             //Destroy(other.gameObject);
 			 count++;
 
 			 updateCounter();

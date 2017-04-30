@@ -8,6 +8,10 @@ TagManager:
   - pickup
   - textoPuntos
   - target
+  - bala
+  - centroPunt
+  - Key
+  - Container
   layers:
   - Default
   - TransparentFX
