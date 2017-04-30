@@ -12,6 +12,7 @@ TagManager:
   - centroPunt
   - Key
   - Container
+  - naveEnemiga
   layers:
   - Default
   - TransparentFX
