@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class enemigoController : MonoBehaviour {
 
 	private int vida = 10;
-
+	public string tagEliminar;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -16,16 +18,18 @@ public class enemigoController : MonoBehaviour {
 	void Update () {
 		
 	}
+	
 
 
 	 void OnTriggerEnter(Collider other)
     {
         if (other.tag == "bala")
         {
+			Destroy (other);
 			vida--;
 			if(vida == 0)
 			{
-			Destroy (GameObject.FindWithTag("naveEnemiga"));
+				Destroy (GameObject.FindWithTag(tagEliminar));
 			}
     	}
 	}
